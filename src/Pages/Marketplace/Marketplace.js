@@ -67,6 +67,55 @@ function MarketPlaceFrame() {
   return (
     <section id="MarketPlaceFrame">
       <div className="MarketPlaceFrameWrapper">
+        <div className="row align-items-center gy-3 my-3">
+          <div className="col-6 first_col">
+            <ul className="list-unstyled card_control_list d-flex flex-wrap">
+              <li className="font_size_20 text-center">
+                <h5 className="mb-0 font_size_20">Floor price</h5>
+                55{" "}
+                <img
+                  src={require("../../Static/img/gold_coin.png")}
+                  alt="img"
+                />
+              </li>
+              <li className="font_size_20 text-center">
+                <h5 className="mb-0 font_size_20">Floor price</h5>
+                55{" "}
+                <img
+                  src={require("../../Static/img/gold_coin.png")}
+                  alt="img"
+                />
+              </li>
+              <li className="font_size_20 text-center">
+                <h5 className="mb-0 font_size_20">Floor price</h5>
+                55{" "}
+                <img
+                  src={require("../../Static/img/gold_coin.png")}
+                  alt="img"
+                />
+              </li>
+            </ul>
+          </div>
+          <div className="col-6 mt-0">
+            <div className="d-flex align-items-center">
+              <div className="form_group flex-grow-1">
+                <select name="" className="font_size_20" id="">
+                  <option value="Price (Lowest to highest)">
+                    Price (Lowest to highest)
+                  </option>
+                </select>
+              </div>
+
+              <div className="form_group">
+                <select name="" className="font_size_20" id="">
+                  <option value="Price (Lowest to highest)">
+                    Price (Lowest to highest)
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="row gy-4">
           {marketplace_card_object.map((v) => {
             return (

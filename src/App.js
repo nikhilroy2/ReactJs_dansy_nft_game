@@ -7,6 +7,7 @@ import Recruit from "./Pages/Recruit/Recruit";
 import Stake from "./Pages/Stake/Stake";
 import Bank from "./Pages/Bank/Bank";
 import Merchant from "./Pages/Merchant/Merchant";
+import Marketplace from "./Pages/Marketplace/Marketplace";
 // ...............Pages................End
 import { BrowserRouter, Switch, Route, Routes, Link } from "react-router-dom";
 
@@ -20,6 +21,7 @@ function App() {
           <Route path="/stake" element={<Stake></Stake>}></Route>
           <Route path="/bank" element={<Bank></Bank>}></Route>
           <Route path="/merchant" element={<Merchant></Merchant>}></Route>
+          <Route path="/marketplace" element={<Marketplace></Marketplace>}></Route>
         </Routes>
       </div>
     </BrowserRouter>

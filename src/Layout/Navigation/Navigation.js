@@ -59,6 +59,7 @@ function Navigation(props) {
 export default Navigation;
 
 export function Navigation2(props) {
+  let pathname = window.location.pathname;
   return (
     <div id="Navigation2">
       <section>
@@ -75,6 +76,11 @@ export function Navigation2(props) {
           </div>
 
           <div className="col-4 text-end">
+            {pathname.toLowerCase() === "/marketplace" && (
+              <button className="bg_dansy my_nft text-white font_size_30 text-uppercase">
+                my nfts 
+              </button>
+            )}
             <button className="bg_dansy connect_wallet_btn text-white font_size_30 text-uppercase">
               Connect Wallet
             </button>

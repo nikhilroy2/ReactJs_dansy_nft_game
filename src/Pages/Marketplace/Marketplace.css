@@ -1,0 +1,24 @@
+#Marketplace {
+  background: url("../../Static/img/bank_bg.png") center/cover no-repeat;
+  padding-bottom: 32px;
+}
+
+#Marketplace .col_wrapper {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+#Marketplace .col_wrapper .img_icon {
+  max-height: 234px;
+}
+
+#Marketplace .col_wrapper * {
+  text-transform: uppercase;
+}
+
+#Marketplace .col_wrapper i {
+  font-style: normal;
+  color: rgba(18, 18, 18, 0.71);
+}
+/*# sourceMappingURL=Marketplace.css.map */

@@ -91,23 +91,30 @@ body {
 }
 // .................Heading Styles and fonts.......................End
 
-
-
-
-
 // .................. bg, color Styles......................
 
-.bg_dansy{
-  background: url('./Static/img/dancy_bg.png') center / 100% 100% no-repeat;
+.bg_dansy {
+  background: url("./Static/img/dancy_bg.png") center / 100% 100% no-repeat;
 }
-
+.text_danger{
+  color: #D40000;
+}
+.text_29{
+  color: #00FF29;
+}
 // ..................btn_dansy bg, color Styles......................End
 
-
 //.................button default style.............
-button{
+button {
   border: none;
   outline: none;
   background: transparent;
 }
 //.................button default style.............End
+
+// .............Section styles................
+section {
+  margin-left: 77px;
+  margin-right: 77px;
+}
+// .............Section styles................End

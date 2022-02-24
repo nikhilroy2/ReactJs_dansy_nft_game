@@ -30,4 +30,24 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+#Navigation2 {
+  padding-top: 59px;
+  padding-bottom: 31px;
+}
+
+#Navigation2 .arrow_btn {
+  width: 75.41px;
+  height: 84px;
+}
+
+#Navigation2 .recruit_btn {
+  width: 289px;
+  height: 89.11px;
+}
+
+#Navigation2 .connect_wallet_btn {
+  width: 223px;
+  height: 69px;
+}
 /*# sourceMappingURL=Navigation.css.map */

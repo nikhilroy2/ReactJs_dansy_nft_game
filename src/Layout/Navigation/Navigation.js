@@ -56,3 +56,30 @@ function Navigation(props) {
 }
 
 export default Navigation;
+
+export function Navigation2(props) {
+  return (
+    <div id="Navigation2">
+      <section>
+        <div className="d-flex align-items-center justify-content-between">
+          <div className="col-4 text-start">
+            <button className="arrow_btn">
+              <img src={require("../../Static/img/arow.png")} alt="img" />
+            </button>
+          </div>
+          <div className="col-4 text-center">
+            <button className="recruit_btn text-white bg_dansy font_size_57 text-uppercase">
+              Recruit{" "}
+            </button>
+          </div>
+
+          <div className="col-4 text-end">
+            <button className="bg_dansy connect_wallet_btn text-white font_size_30 text-uppercase">
+              Connect Wallet
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

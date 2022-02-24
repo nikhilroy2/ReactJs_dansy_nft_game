@@ -114,9 +114,22 @@ body {
   background: url("./Static/img/dancy_bg.png") center/100% 100% no-repeat;
 }
 
+.text_danger {
+  color: #D40000;
+}
+
+.text_29 {
+  color: #00FF29;
+}
+
 button {
   border: none;
   outline: none;
   background: transparent;
+}
+
+section {
+  margin-left: 77px;
+  margin-right: 77px;
 }
 /*# sourceMappingURL=App.css.map */

@@ -1,0 +1,47 @@
+#Recruit {
+  background: url("../../Static/img/Recruit_bg.png") center/cover no-repeat;
+  padding-bottom: 32px;
+}
+
+#Recruit #RecruitFrame {
+  background: rgba(35, 34, 34, 0.62);
+  border-radius: 10px;
+}
+
+#Recruit #RecruitFrame p {
+  line-height: 90%;
+}
+
+#Recruit #RecruitFrame .gen_list {
+  background: #ffcaca;
+  margin-left: 142px;
+  margin-right: 115px;
+  border-radius: 8px;
+  margin-top: 45px;
+}
+
+#Recruit #RecruitFrame .gen_list li:not(:last-child) {
+  position: relative;
+}
+
+#Recruit #RecruitFrame .gen_list li:not(:last-child)::after {
+  content: "";
+  width: 10px;
+  right: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  background: #000000;
+  height: 55px;
+}
+
+#Recruit #RecruitFrame .recruit_human_img_wrapper {
+  padding-top: 41px;
+  padding-bottom: 57px;
+}
+
+#Recruit #RecruitFrame .recruit_human_img_wrapper .recruit_human_img {
+  margin-right: 176px;
+}
+/*# sourceMappingURL=Recruit.css.map */

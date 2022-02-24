@@ -5,8 +5,9 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1440px;
 }
 
 .font_size_35 {
@@ -107,5 +108,9 @@ body {
 
 .font_size_18 {
   font-size: 18px;
+}
+
+.bg_dansy {
+  background: url("./Static/img/dancy_bg.png") center/100% 100% no-repeat;
 }
 /*# sourceMappingURL=App.css.map */

@@ -4,8 +4,9 @@
   font-family: "VT323", monospace;
 }
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1440px;
 }
 // ..................Global Styles......................End
 
@@ -89,3 +90,15 @@ body {
   font-size: 18px;
 }
 // .................Heading Styles and fonts.......................End
+
+
+
+
+
+// .................. bg, color Styles......................
+
+.bg_dansy{
+  background: url('./Static/img/dancy_bg.png') center / 100% 100% no-repeat;
+}
+
+// ..................btn_dansy bg, color Styles......................End

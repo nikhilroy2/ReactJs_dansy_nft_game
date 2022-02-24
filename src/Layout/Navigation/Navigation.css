@@ -1,0 +1,33 @@
+#Navigation nav.navigation_wrapper {
+  padding-top: 51px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+#Navigation nav.navigation_wrapper .nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Navigation nav.navigation_wrapper .nav_list li:not(:last-child) {
+  margin-right: 14.67px;
+}
+
+#Navigation nav.navigation_wrapper .nav_list a {
+  width: 202.33px;
+  height: 62.38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=Navigation.css.map */

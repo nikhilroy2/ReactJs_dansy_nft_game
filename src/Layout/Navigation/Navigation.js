@@ -1,15 +1,16 @@
 import React from "react";
 import "./Navigation.css";
+import { Link } from "react-router-dom";
 function Navigation(props) {
   const nav_list_object = [
     {
       id: 1,
-      link: "#",
+      link: "",
       name: "Dashboard",
     },
     {
       id: 2,
-      link: "#",
+      link: "/recruit",
       name: "Recruit",
     },
     {
@@ -40,12 +41,12 @@ function Navigation(props) {
           {nav_list_object.map((v) => {
             return (
               <li key={v.id}>
-                <a
-                  href={v.link}
+                <Link
+                  to={v.link}
                   className="bg_dansy font_size_35 text-white text-uppercase"
                 >
                   {v.name}
-                </a>
+                </Link>
               </li>
             );
           })}

@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./Pages/Home/Home";
 import Recruit from "./Pages/Recruit/Recruit";
 import Stake from "./Pages/Stake/Stake";
+import Bank from "./Pages/Bank/Bank";
 // ...............Pages................End
 import { BrowserRouter, Switch, Route, Routes, Link } from "react-router-dom";
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="/recruit" element={<Recruit></Recruit>}></Route>
           <Route path="/stake" element={<Stake></Stake>}></Route>
+          <Route path="/bank" element={<Bank></Bank>}></Route>
         </Routes>
       </div>
     </BrowserRouter>

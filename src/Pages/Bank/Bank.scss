@@ -1,0 +1,26 @@
+#Bank {
+  background: url("../../Static/img/bank_bg.png") center/cover no-repeat;
+  //   height: 100vh;
+  padding-bottom: 32px;
+  *{
+      text-transform: uppercase;
+  }
+  .card_wrapper{
+      border-radius: 10px;
+      background: #FFCACA;
+      padding: 30px;
+      text-align: center;
+      .wallet_btn{
+          width: 139px;
+          height: 48.29px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .card_body{
+          .img_icon{
+              height: 69px;
+          }
+      }
+  }
+}

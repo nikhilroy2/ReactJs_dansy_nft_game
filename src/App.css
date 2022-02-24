@@ -8,6 +8,7 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 1440px;
+  color: #000000;
 }
 
 .font_size_35 {
@@ -72,6 +73,10 @@ body {
   .font_size_60.sm_responsive {
     font-size: 36px;
   }
+}
+
+.font_size_40 {
+  font-size: 40px;
 }
 
 .font_size_56 {

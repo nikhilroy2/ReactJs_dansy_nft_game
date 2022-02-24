@@ -28,7 +28,7 @@ function Home(props) {
         alt="img"
       />
       <div className="btn_wrapper text-center">
-        <button className="bg_dansy font_size_50">BUY YEN</button>
+        <button className="bg_dansy font_size_50 text-white">BUY YEN</button>
       </div>
       <ul className="social_icon_list list-unstyled d-flex justify-content-center align-items-center">
         {social_object.map((v) => {

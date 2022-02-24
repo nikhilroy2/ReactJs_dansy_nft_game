@@ -64,7 +64,7 @@ export function Navigation2(props) {
       <section>
         <div className="d-flex align-items-center justify-content-between">
           <div className="col-4 text-start">
-            <button className="arrow_btn">
+            <button onClick={() => window.history.back()} className="arrow_btn">
               <img src={require("../../Static/img/arow.png")} alt="img" />
             </button>
           </div>

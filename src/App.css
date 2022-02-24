@@ -8,4 +8,104 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.font_size_35 {
+  font-size: 35px;
+}
+
+@media (max-width: 360px) {
+  .font_size_35.sm_responsive {
+    font-size: 10px;
+  }
+}
+
+.font_size_50 {
+  font-size: 50px;
+}
+
+@media (max-width: 360px) {
+  .font_size_50.sm_responsive {
+    font-size: 28px;
+  }
+}
+
+.font_size_57 {
+  font-size: 57px;
+}
+
+@media (max-width: 360px) {
+  .font_size_57.sm_responsive {
+    font-size: 18px;
+  }
+}
+
+.font_size_30 {
+  font-size: 30px;
+}
+
+.font_size_45 {
+  font-size: 45px;
+}
+
+@media (max-width: 360px) {
+  .font_size_45.sm_responsive {
+    font-size: 18px;
+  }
+}
+
+.font_size_54 {
+  font-size: 54px;
+}
+
+@media (max-width: 360px) {
+  .font_size_54.sm_responsive {
+    font-size: 18px;
+  }
+}
+
+.font_size_60 {
+  font-size: 60px;
+}
+
+@media (max-width: 360px) {
+  .font_size_60.sm_responsive {
+    font-size: 36px;
+  }
+}
+
+.font_size_56 {
+  font-size: 56px;
+}
+
+.font_size_55 {
+  font-size: 55px;
+}
+
+.font_size_33 {
+  font-size: 33px;
+}
+
+.font_size_20 {
+  font-size: 20px;
+}
+
+.font_size_24 {
+  font-size: 24px;
+}
+
+.font_size_16 {
+  font-size: 16px;
+}
+
+.font_size_12 {
+  font-size: 12px;
+}
+
+.font_size_22 {
+  font-size: 22px;
+}
+
+.font_size_18 {
+  font-size: 18px;
+}
 /*# sourceMappingURL=App.css.map */

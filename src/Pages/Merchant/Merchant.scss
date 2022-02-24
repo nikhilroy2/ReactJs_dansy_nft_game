@@ -1,0 +1,32 @@
+#Merchant {
+  background: url("../../Static/img/merchant_bg.png") center/cover no-repeat;
+  //   height: 100vh;
+  padding-bottom: 32px;
+  * {
+    text-transform: uppercase;
+  }
+  .card_wrapper {
+    .img_icon {
+      max-height: 300px;
+    }
+    border-radius: 10px;
+    background: #ffcaca;
+    text-align: center;
+    overflow: hidden;
+    .card_header {
+      padding: 30px;
+      padding-bottom: 0px;
+      margin-bottom: -60px;
+    }
+    .card_body_content {
+      background: rgba(33, 38, 38, 0.61);
+      padding-top: 6px;
+      .card_footer_content {
+        background: #212626;
+        border-radius: 10px;
+        padding: 10px 25px;
+        color: #fff;
+      }
+    }
+  }
+}

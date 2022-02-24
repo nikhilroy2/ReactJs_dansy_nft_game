@@ -15,22 +15,22 @@ function Navigation(props) {
     },
     {
       id: 3,
-      link: "#",
+      link: "/stake",
       name: "Stake",
     },
     {
       id: 4,
-      link: "#",
+      link: "/bank",
       name: "Bank",
     },
     {
       id: 5,
-      link: "#",
+      link: "/merchant",
       name: "Merchant",
     },
     {
       id: 6,
-      link: "#",
+      link: "/marketplace",
       name: "Marketplace",
     },
   ];
@@ -70,7 +70,7 @@ export function Navigation2(props) {
           </div>
           <div className="col-4 text-center">
             <button className="recruit_btn text-white bg_dansy font_size_57 text-uppercase">
-              Recruit{" "}
+              {props.navigateName}
             </button>
           </div>
 

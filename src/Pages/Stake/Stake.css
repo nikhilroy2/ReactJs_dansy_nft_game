@@ -1,0 +1,51 @@
+#Stake {
+  background: url("../../Static/img/stake_bg.png") center top/cover no-repeat;
+  padding-bottom: 32px;
+}
+
+#Stake #StakeFrame {
+  background: rgba(35, 34, 34, 0.49);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+#Stake #StakeFrame * {
+  text-transform: uppercase;
+}
+
+#Stake #StakeFrame .stake_tab_wrapper li.list_space {
+  margin-right: 53px;
+}
+
+#Stake #StakeFrame .stake_tab_wrapper svg {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+#Stake #StakeFrame .stake_tab_wrapper .tab_btn {
+  color: rgba(255, 255, 255, 0.59);
+}
+
+#Stake #StakeFrame .stake_tab_wrapper .tab_btn.active_tab {
+  color: #fff;
+}
+
+#Stake #StakeFrame .stake_tab_wrapper .tab_btn.active_tab path {
+  fill: #fff;
+}
+
+#Stake #StakeFrame .tab_content_wrapper .btn_no_gold {
+  background: url("../../Static/img/stake_btn.png") center/100% 100% no-repeat;
+  width: 189.22px;
+  height: 143.58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=Stake.css.map */

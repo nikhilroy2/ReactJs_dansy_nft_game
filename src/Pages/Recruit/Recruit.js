@@ -4,7 +4,7 @@ import { Navigation2 } from "../../Layout/Navigation/Navigation";
 function Recruit(props) {
   return (
     <div id="Recruit">
-      <Navigation2></Navigation2>
+      <Navigation2 navigateName="Recruit"></Navigation2>
       <RecruitFrame></RecruitFrame>
     </div>
   );
@@ -43,8 +43,15 @@ function RecruitFrame() {
         </h3>
       </div>
       <div className="d-flex justify-content-center recruit_human_img_wrapper ">
-          <img className="recruit_human_img" src={require('../../Static/img/3940438-middle-removebg-preview2.png')} alt="img" />
-          <img src={require('../../Static/img/3940438-middle-removebg-preview.png')} alt="img" />
+        <img
+          className="recruit_human_img"
+          src={require("../../Static/img/3940438-middle-removebg-preview2.png")}
+          alt="img"
+        />
+        <img
+          src={require("../../Static/img/3940438-middle-removebg-preview.png")}
+          alt="img"
+        />
       </div>
     </section>
   );

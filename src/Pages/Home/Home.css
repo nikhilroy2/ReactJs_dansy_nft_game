@@ -1,5 +1,47 @@
 #Home {
   background: url("../../Static/img/home_img.png") center/cover no-repeat;
-  min-height: 1024px;
+}
+
+#Home .dynasty_img {
+  width: 535px;
+  height: 482px;
+  margin: 7px auto 59px auto;
+  display: block;
+}
+
+#Home .btn_wrapper button {
+  width: 257px;
+  height: 89px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Home .social_icon_list {
+  margin-top: 76px;
+  padding-bottom: 103px;
+}
+
+#Home .social_icon_list li:not(:last-child) {
+  margin-right: 55.64px;
+}
+
+#Home .social_icon_list a {
+  width: 88.36px;
+  height: 88.36px;
+  display: inline-block;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+#Home .social_icon_list a img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=Home.css.map */

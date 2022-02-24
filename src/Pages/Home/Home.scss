@@ -1,4 +1,38 @@
-#Home{
-    background: url('../../Static/img/home_img.png') center/cover no-repeat;
-    min-height: 1024px
+#Home {
+  background: url("../../Static/img/home_img.png") center/cover no-repeat;
+//   min-height: 1024px;
+  .dynasty_img {
+    width: 535px;
+    height: 482px;
+    margin: 7px auto 59px auto;
+    display: block;
+  }
+  .btn_wrapper {
+    button {
+      width: 257px;
+      height: 89px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .social_icon_list {
+    margin-top: 76px;
+    padding-bottom: 103px;
+    li:not(:last-child) {
+      margin-right: 55.64px;
+    }
+    a {
+      $s: 88.36px;
+      width: $s;
+      height: $s;
+      display: inline-block;
+      border-radius: 50%;
+      text-decoration: none;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }

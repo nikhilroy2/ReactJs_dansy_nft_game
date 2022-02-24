@@ -113,4 +113,10 @@ body {
 .bg_dansy {
   background: url("./Static/img/dancy_bg.png") center/100% 100% no-repeat;
 }
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
 /*# sourceMappingURL=App.css.map */

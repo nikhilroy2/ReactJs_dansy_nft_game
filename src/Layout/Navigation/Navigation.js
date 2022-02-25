@@ -77,9 +77,9 @@ export function Navigation2(props) {
 
           <div className="col-4 text-end">
             {pathname.toLowerCase() === "/marketplace" && (
-              <button className="bg_dansy my_nft text-white font_size_30 text-uppercase">
-                my nfts 
-              </button>
+              <Link to="/my_nft" className="bg_dansy my_nft text-white font_size_30 text-uppercase">
+                my nfts
+              </Link>
             )}
             <button className="bg_dansy connect_wallet_btn text-white font_size_30 text-uppercase">
               Connect Wallet

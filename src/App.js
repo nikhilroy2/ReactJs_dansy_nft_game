@@ -9,6 +9,7 @@ import Bank from "./Pages/Bank/Bank";
 import Merchant from "./Pages/Merchant/Merchant";
 import Marketplace from "./Pages/Marketplace/Marketplace";
 import BuyNft from "./Pages/BuyNft/BuyNft";
+import MyNft from "./Pages/MyNft/MyNft";
 // ...............Pages................End
 import { BrowserRouter, Switch, Route, Routes, Link } from "react-router-dom";
 
@@ -22,8 +23,12 @@ function App() {
           <Route path="/stake" element={<Stake></Stake>}></Route>
           <Route path="/bank" element={<Bank></Bank>}></Route>
           <Route path="/merchant" element={<Merchant></Merchant>}></Route>
-          <Route path="/marketplace" element={<Marketplace></Marketplace>}></Route>
+          <Route
+            path="/marketplace"
+            element={<Marketplace></Marketplace>}
+          ></Route>
           <Route path="/buy_nft" element={<BuyNft></BuyNft>}></Route>
+          <Route path="/my_nft" element={<MyNft></MyNft>}></Route>
         </Routes>
       </div>
     </BrowserRouter>

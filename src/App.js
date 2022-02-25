@@ -10,6 +10,7 @@ import Merchant from "./Pages/Merchant/Merchant";
 import Marketplace from "./Pages/Marketplace/Marketplace";
 import BuyNft from "./Pages/BuyNft/BuyNft";
 import MyNft from "./Pages/MyNft/MyNft";
+import StatisticsPage from "./Pages/StatisticsPage/StatisticsPage";
 // ...............Pages................End
 import { BrowserRouter, Switch, Route, Routes, Link } from "react-router-dom";
 
@@ -29,6 +30,7 @@ function App() {
           ></Route>
           <Route path="/buy_nft" element={<BuyNft></BuyNft>}></Route>
           <Route path="/my_nft" element={<MyNft></MyNft>}></Route>
+          <Route path="/statistics_page" element={<StatisticsPage></StatisticsPage>}></Route>
         </Routes>
       </div>
     </BrowserRouter>

@@ -5,8 +5,10 @@ import "./StatisticsPage.css";
 function StatisticsPage(props) {
   return (
     <div id="StatisticsPage">
-      <Navigation2 navigateName="DASHBOARD"></Navigation2>
-      <StatisticsPageFrame></StatisticsPageFrame>
+      <div className="container_section">
+        <Navigation2 navigateName="DASHBOARD"></Navigation2>
+        <StatisticsPageFrame></StatisticsPageFrame>
+      </div>
     </div>
   );
 }

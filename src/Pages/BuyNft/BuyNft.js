@@ -6,8 +6,10 @@ import { Navigation2 } from "../../Layout/Navigation/Navigation";
 function BuyNft(props) {
   return (
     <div id="BuyNft">
-      <Navigation2 navigateName="Marketplace"></Navigation2>
-      <BuyNftFrame></BuyNftFrame>
+      <div className="container_section">
+        <Navigation2 navigateName="Marketplace"></Navigation2>
+        <BuyNftFrame></BuyNftFrame>
+      </div>
     </div>
   );
 }
@@ -109,10 +111,7 @@ const SamuraiFunc = () => {
 
         <div className="button_wrapper pt-3">
           <button className="bg_dansy">
-            <Link
-              to="/statistics_page"
-              className=" font_size_34 px-4 me-3"
-            >
+            <Link to="/statistics_page" className=" font_size_34 px-4 me-3">
               list for sale
             </Link>
           </button>

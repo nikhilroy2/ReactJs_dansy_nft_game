@@ -4,9 +4,10 @@ import "./Bank.css";
 function Bank(props) {
   return (
     <div id="Bank">
-      <Navigation2 navigateName="Bank"></Navigation2>
-
-      <BankFrame></BankFrame>
+      <div className="container_section">
+        <Navigation2 navigateName="Bank"></Navigation2>
+        <BankFrame></BankFrame>
+      </div>
     </div>
   );
 }

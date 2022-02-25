@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 function Marketplace(props) {
   return (
     <div id="Marketplace">
-      <Navigation2 navigateName="Marketplace"></Navigation2>
-      <MarketPlaceFrame></MarketPlaceFrame>
+      <div className="container_section">
+        <Navigation2 navigateName="Marketplace"></Navigation2>
+        <MarketPlaceFrame></MarketPlaceFrame>
+      </div>
     </div>
   );
 }

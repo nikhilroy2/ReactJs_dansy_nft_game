@@ -5,8 +5,10 @@ import { Navigation2 } from "../../Layout/Navigation/Navigation";
 function Merchant(props) {
   return (
     <div id="Merchant">
-      <Navigation2 navigateName="Merchant"></Navigation2>
-      <MerchantFrame></MerchantFrame>
+      <div className="container_section">
+        <Navigation2 navigateName="Merchant"></Navigation2>
+        <MerchantFrame></MerchantFrame>
+      </div>
     </div>
   );
 }

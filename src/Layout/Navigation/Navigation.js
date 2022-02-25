@@ -94,7 +94,7 @@ export function Navigation2(props) {
               <button
                 className="bg_dansy sm_responsive
                connect_wallet_btn_success px-3 py-2 text-white 
-              font_size_30 text-uppercase text-nowrap"
+              font_size_22 text-uppercase text-nowrap align-baseline"
               >
                 0.365 AVAX OXE4O..BDOF
               </button>

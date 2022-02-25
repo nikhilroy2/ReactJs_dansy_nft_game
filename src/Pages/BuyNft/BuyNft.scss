@@ -1,0 +1,80 @@
+#BuyNft {
+  //   height: 100vh;
+  position: relative;
+  padding-bottom: 32px;
+  background: rgba(0, 0, 0, 0.6);
+  * {
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &::after {
+    background: url("../../Static/img/marketplace_bg.png") center/cover
+      no-repeat;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+  .BuyNftFrameWrapper {
+    .buy_nft_inner {
+      .img_box {
+        width: 445px;
+        height: 374px;
+        margin-right: 48px;
+        background: #fff;
+        border-radius: 10px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .content_box {
+        .content_subtitle {
+          color: rgba(255, 255, 255, 0.73);
+        }
+        .avatar_img {
+          margin-right: 12px;
+          $s: 38px;
+          width: $s;
+          height: $s;
+          border-radius: 50%;
+          vertical-align: middle;
+        }
+        .button_wrapper {
+        }
+      }
+    }
+    #PropertiesFunc{
+        .btn_wrapper{
+            button{
+                background: rgba(212, 0, 0, 0.49);
+                color: #fff;
+                width: 211px;
+                height: 63px;
+                border-radius: 10px;
+                border: 1px solid #fff;
+                line-height: 100%;
+            }
+        }
+    }
+    #OffersFunc{
+      .offers_table{
+          .user_avatar{
+              $s: 21px;
+              width: $s;
+              height: $s;
+              border-radius: 50%;
+          }
+          .accept_btn{
+              border-radius: 3px;
+              border: 1px solid #FF5555;
+          }
+      }  
+    }
+  }
+}

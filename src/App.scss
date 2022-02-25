@@ -20,6 +20,9 @@ body {
     }
   }
 }
+.font_size_34{
+  font-size: 34px;
+}
 .font_size_50 {
   font-size: 50px;
   &.sm_responsive {
@@ -81,6 +84,9 @@ body {
 .font_size_24 {
   font-size: 24px;
 }
+.font_size_26{
+  font-size: 26px;
+}
 .font_size_16 {
   font-size: 16px;
 }
@@ -93,6 +99,9 @@ body {
 .font_size_18 {
   font-size: 18px;
 }
+.font_size_49{
+  font-size: 49px;
+}
 // .................Heading Styles and fonts.......................End
 
 // .................. bg, color Styles......................
@@ -101,10 +110,19 @@ body {
   background: url("./Static/img/dancy_bg.png") center / 100% 100% no-repeat;
 }
 .text_danger{
-  color: #D40000;
+  color: #D40000!important;
+}
+.text_red{
+  color: #FF0000!important;
 }
 .text_29{
   color: #00FF29;
+}
+.text_white_71{
+  color: rgba(255, 255, 255, 0.71)!important;
+}
+.text_white_73{
+  color: rgba(255, 255, 255, 0.73)!important;
 }
 // ..................btn_dansy bg, color Styles......................End
 

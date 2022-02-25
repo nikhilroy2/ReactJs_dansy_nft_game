@@ -3,11 +3,21 @@
     padding-top: 51px;
     padding-left: 75px;
     padding-right: 75px;
+    @media (max-width: 750px) {
+      padding-top: 24px;
+    }
+    @media (max-width: 1440px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     .nav_list {
       display: flex;
       align-items: center;
       li:not(:last-child) {
         margin-right: 14.67px;
+        @media (max-width: 750px) {
+          margin-right: 3.72px;
+        }
       }
       a {
         width: 202.33px;
@@ -15,6 +25,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: 1440px) {
+          width: 102.33px;
+          height: 40.38px;
+        }
+        @media (max-width: 750px) {
+          width: 50.23px;
+          height: 18.64px;
+        }
       }
     }
   }
@@ -34,7 +52,7 @@
     width: 223px;
     height: 69px;
   }
-  .my_nft{
+  .my_nft {
     width: 135px;
     height: 57px;
     display: inline-flex;

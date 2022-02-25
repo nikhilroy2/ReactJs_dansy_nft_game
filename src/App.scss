@@ -6,27 +6,38 @@
 body {
   margin: 0 auto;
   padding: 0;
-  max-width: 1440px;
+
   color: #000000;
+  .container_section {
+    max-width: 1440px;
+    margin: auto;
+  }
 }
 // ..................Global Styles......................End
 
 // .................Heading Styles and fonts.......................
 .font_size_35 {
   font-size: 35px;
+  // from figma
+  // custom
+  &.lg_responsive {
+    @media (max-width: 1440px) {
+      font-size: 20px;
+    }
+  }
   &.sm_responsive {
-    @media (max-width: 360px) {
+    @media (max-width: 750px) {
       font-size: 10px;
     }
   }
 }
-.font_size_34{
+.font_size_34 {
   font-size: 34px;
 }
 .font_size_50 {
   font-size: 50px;
   &.sm_responsive {
-    @media (max-width: 360px) {
+    @media (max-width: 750px) {
       font-size: 28px;
     }
   }
@@ -66,7 +77,7 @@ body {
     }
   }
 }
-.font_size_40{
+.font_size_40 {
   font-size: 40px;
 }
 .font_size_56 {
@@ -84,7 +95,7 @@ body {
 .font_size_24 {
   font-size: 24px;
 }
-.font_size_26{
+.font_size_26 {
   font-size: 26px;
 }
 .font_size_16 {
@@ -99,13 +110,13 @@ body {
 .font_size_18 {
   font-size: 18px;
 }
-.font_size_49{
+.font_size_49 {
   font-size: 49px;
 }
-.font_size_61{
+.font_size_61 {
   font-size: 61px;
 }
-.font_size_65{
+.font_size_65 {
   font-size: 65px;
 }
 // .................Heading Styles and fonts.......................End
@@ -115,23 +126,23 @@ body {
 .bg_dansy {
   background: url("./Static/img/dancy_bg.png") center / 100% 100% no-repeat;
 }
-.text_danger{
-  color: #D40000!important;
+.text_danger {
+  color: #d40000 !important;
 }
-.text_red{
-  color: #FF0000!important;
+.text_red {
+  color: #ff0000 !important;
 }
-.text_29{
-  color: #00FF29;
+.text_29 {
+  color: #00ff29;
 }
-.text_white_71{
-  color: rgba(255, 255, 255, 0.71)!important;
+.text_white_71 {
+  color: rgba(255, 255, 255, 0.71) !important;
 }
-.text_white_73{
-  color: rgba(255, 255, 255, 0.73)!important;
+.text_white_73 {
+  color: rgba(255, 255, 255, 0.73) !important;
 }
-.text_500{
-  color: #FFE500!important;
+.text_500 {
+  color: #ffe500 !important;
 }
 // ..................btn_dansy bg, color Styles......................End
 

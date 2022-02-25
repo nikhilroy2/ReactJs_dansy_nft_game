@@ -6,6 +6,11 @@
     height: 482px;
     margin: 7px auto 59px auto;
     display: block;
+    @media (max-width: 750px) {
+      width: 217px;
+      height: 195px;
+      margin: 56.36px auto 40px auto;
+    }
   }
   .btn_wrapper {
     button {
@@ -14,13 +19,23 @@
       display: inline-flex;
       justify-content: center;
       align-items: center;
+      @media (max-width: 750px) {
+        width: 141px;
+        height: 48.83px;
+      }
     }
   }
   .social_icon_list {
     margin-top: 76px;
     padding-bottom: 103px;
+    @media (max-width: 750px) {
+      margin-top: 47.17px;
+    }
     li:not(:last-child) {
       margin-right: 55.64px;
+      @media (max-width: 750px) {
+        margin-right: 27.81px;
+      }
     }
     a {
       $s: 88.36px;
@@ -29,6 +44,11 @@
       display: inline-block;
       border-radius: 50%;
       text-decoration: none;
+      @media (max-width: 750px) {
+        $s: 44.16px;
+        width: $s;
+        height: $s;
+      }
       img {
         width: 100%;
         height: 100%;

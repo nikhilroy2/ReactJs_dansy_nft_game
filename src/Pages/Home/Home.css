@@ -9,6 +9,14 @@
   display: block;
 }
 
+@media (max-width: 750px) {
+  #Home .dynasty_img {
+    width: 217px;
+    height: 195px;
+    margin: 56.36px auto 40px auto;
+  }
+}
+
 #Home .btn_wrapper button {
   width: 257px;
   height: 89px;
@@ -23,13 +31,32 @@
           align-items: center;
 }
 
+@media (max-width: 750px) {
+  #Home .btn_wrapper button {
+    width: 141px;
+    height: 48.83px;
+  }
+}
+
 #Home .social_icon_list {
   margin-top: 76px;
   padding-bottom: 103px;
 }
 
+@media (max-width: 750px) {
+  #Home .social_icon_list {
+    margin-top: 47.17px;
+  }
+}
+
 #Home .social_icon_list li:not(:last-child) {
   margin-right: 55.64px;
+}
+
+@media (max-width: 750px) {
+  #Home .social_icon_list li:not(:last-child) {
+    margin-right: 27.81px;
+  }
 }
 
 #Home .social_icon_list a {
@@ -38,6 +65,13 @@
   display: inline-block;
   border-radius: 50%;
   text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  #Home .social_icon_list a {
+    width: 44.16px;
+    height: 44.16px;
+  }
 }
 
 #Home .social_icon_list a img {

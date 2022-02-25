@@ -7,15 +7,25 @@
 body {
   margin: 0 auto;
   padding: 0;
-  max-width: 1440px;
   color: #000000;
+}
+
+body .container_section {
+  max-width: 1440px;
+  margin: auto;
 }
 
 .font_size_35 {
   font-size: 35px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1440px) {
+  .font_size_35.lg_responsive {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 750px) {
   .font_size_35.sm_responsive {
     font-size: 10px;
   }
@@ -29,7 +39,7 @@ body {
   font-size: 50px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 750px) {
   .font_size_50.sm_responsive {
     font-size: 28px;
   }
@@ -140,15 +150,15 @@ body {
 }
 
 .text_danger {
-  color: #D40000 !important;
+  color: #d40000 !important;
 }
 
 .text_red {
-  color: #FF0000 !important;
+  color: #ff0000 !important;
 }
 
 .text_29 {
-  color: #00FF29;
+  color: #00ff29;
 }
 
 .text_white_71 {
@@ -160,7 +170,7 @@ body {
 }
 
 .text_500 {
-  color: #FFE500 !important;
+  color: #ffe500 !important;
 }
 
 button {

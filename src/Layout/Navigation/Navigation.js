@@ -37,13 +37,13 @@ function Navigation(props) {
   return (
     <div id="Navigation">
       <nav className="navigation_wrapper">
-        <ul className="list-unstyled d-flex align-items-center nav_list">
+        <ul className="list-unstyled justify-content-center d-flex align-items-center nav_list">
           {nav_list_object.map((v) => {
             return (
               <li key={v.id}>
                 <Link
                   to={v.link}
-                  className="bg_dansy font_size_35 text-white text-uppercase"
+                  className="bg_dansy font_size_35 lg_responsive sm_responsive text-white text-uppercase"
                 >
                   {v.name}
                 </Link>

@@ -21,26 +21,28 @@ function Home(props) {
   ];
   return (
     <div id="Home">
-      <Navigation></Navigation>
-      <img
-        className="dynasty_img"
-        src={require("../../Static/img/dynasty_zen.png")}
-        alt="img"
-      />
-      <div className="btn_wrapper text-center">
-        <button className="bg_dansy font_size_50 text-white">BUY YEN</button>
+      <div className="container_section">
+        <Navigation></Navigation>
+        <img
+          className="dynasty_img"
+          src={require("../../Static/img/dynasty_zen.png")}
+          alt="img"
+        />
+        <div className="btn_wrapper text-center">
+          <button className="bg_dansy font_size_50 sm_responsive text-white">BUY YEN</button>
+        </div>
+        <ul className="social_icon_list list-unstyled d-flex justify-content-center align-items-center">
+          {social_object.map((v) => {
+            return (
+              <li key={v.id}>
+                <a href={v.link}>
+                  <img src={v.img} alt="img" />
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </div>
-      <ul className="social_icon_list list-unstyled d-flex justify-content-center align-items-center">
-        {social_object.map((v) => {
-          return (
-            <li key={v.id}>
-              <a href={v.link}>
-                <img src={v.img} alt="img" />
-              </a>
-            </li>
-          );
-        })}
-      </ul>
     </div>
   );
 }

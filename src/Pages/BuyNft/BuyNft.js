@@ -1,5 +1,6 @@
 import React from "react";
 import "./BuyNft.css";
+import { Link } from "react-router-dom";
 import { Navigation2 } from "../../Layout/Navigation/Navigation";
 
 function BuyNft(props) {
@@ -107,8 +108,13 @@ const SamuraiFunc = () => {
         </ul>
 
         <div className="button_wrapper pt-3">
-          <button className="bg_dansy font_size_34 px-4 me-3">
-            list for sale
+          <button className="bg_dansy">
+            <Link
+              to="/statistics_page"
+              className=" font_size_34 px-4 me-3"
+            >
+              list for sale
+            </Link>
           </button>
           <button className="bg_dansy font_size_34 px-4">cancel listing</button>
         </div>
@@ -158,13 +164,13 @@ const OffersFunc = () => {
       action: "ACCEPT",
     },
     {
-        id: 3,
-        from: "CHINO",
-        price: "1.4",
-        date: "1.4 2/14/2022 10:11 AM",
-        status: "Active",
-        action: "ACCEPT",
-      },
+      id: 3,
+      from: "CHINO",
+      price: "1.4",
+      date: "1.4 2/14/2022 10:11 AM",
+      status: "Active",
+      action: "ACCEPT",
+    },
   ];
   return (
     <div id="OffersFunc" className="mt-4">

@@ -69,9 +69,23 @@
   padding-bottom: 31px;
 }
 
-#Navigation2 .arrow_btn {
+#Navigation2 .arrow_btn img {
   width: 75.41px;
   height: 84px;
+}
+
+@media (max-width: 1440px) {
+  #Navigation2 .arrow_btn img {
+    width: 54.24px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 750px) {
+  #Navigation2 .arrow_btn img {
+    width: 24.24px;
+    height: 27px;
+  }
 }
 
 #Navigation2 .recruit_btn {
@@ -79,9 +93,37 @@
   height: 89.11px;
 }
 
+@media (max-width: 1440px) {
+  #Navigation2 .recruit_btn {
+    width: 180px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 750px) {
+  #Navigation2 .recruit_btn {
+    width: 78.14px;
+    height: 29px;
+  }
+}
+
 #Navigation2 .connect_wallet_btn {
   width: 223px;
   height: 69px;
+}
+
+@media (max-width: 1440px) {
+  #Navigation2 .connect_wallet_btn {
+    width: 200px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 750px) {
+  #Navigation2 .connect_wallet_btn {
+    width: 82px;
+    height: 21px;
+  }
 }
 
 #Navigation2 .my_nft {

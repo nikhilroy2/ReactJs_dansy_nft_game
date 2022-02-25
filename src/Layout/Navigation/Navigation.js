@@ -1,4 +1,5 @@
 import React from "react";
+import { IsAuthenticate } from "../../AuthManagement/Auth";
 import "./Navigation.css";
 import { Link } from "react-router-dom";
 function Navigation(props) {
@@ -65,18 +66,21 @@ export function Navigation2(props) {
     <div id="Navigation2">
       <section>
         <div className="d-flex align-items-center justify-content-between">
-          <div className="col-4 text-start">
+          <div className={`${IsAuthenticate? 'col-2 col-sm-4 ': 'col-4 '}`}>
             <button onClick={() => window.history.back()} className="arrow_btn">
               <img src={require("../../Static/img/arow.png")} alt="img" />
             </button>
           </div>
           <div className="col-4 text-center">
-            <button className="recruit_btn text-white bg_dansy font_size_57 text-uppercase">
+            <button
+              className="recruit_btn lg_responsive sm_responsive text-white 
+            bg_dansy font_size_57 text-uppercase"
+            >
               {props.navigateName}
             </button>
           </div>
 
-          <div className="col-4 text-end">
+          <div className={`${IsAuthenticate? 'col-6 col-sm-4 text-end text-sm-center': 'col-4 text-center'}`}>
             {pathname.toLowerCase() === "/marketplace" && (
               <Link
                 to="/my_nft"
@@ -85,8 +89,21 @@ export function Navigation2(props) {
                 my nfts
               </Link>
             )}
-            {pathname.toLowerCase() !== "/statistics_page" && (
-              <button className="bg_dansy connect_wallet_btn text-white font_size_30 text-uppercase">
+
+            {IsAuthenticate ? (
+              <button
+                className="bg_dansy sm_responsive
+               connect_wallet_btn_success px-3 py-2 text-white 
+              font_size_30 text-uppercase text-nowrap"
+              >
+                0.365 AVAX OXE4O..BDOF
+              </button>
+            ) : (
+              <button
+                className="bg_dansy sm_responsive
+         connect_wallet_btn text-white 
+        font_size_30 text-uppercase"
+              >
                 Connect Wallet
               </button>
             )}

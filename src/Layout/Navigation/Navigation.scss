@@ -41,16 +41,42 @@
   padding-top: 59px;
   padding-bottom: 31px;
   .arrow_btn {
-    width: 75.41px;
-    height: 84px;
+    img {
+      width: 75.41px;
+      height: 84px;
+      @media (max-width: 1440px) {
+        width: 54.24px;
+        height: 55px;
+      }
+      @media (max-width: 750px) {
+        width: 24.24px;
+        height: 27px;
+      }
+    }
   }
   .recruit_btn {
     width: 289px;
     height: 89.11px;
+    @media (max-width: 1440px) {
+      width: 180px;
+      height: 55px;
+    }
+    @media (max-width: 750px) {
+      width: 78.14px;
+      height: 29px;
+    }
   }
   .connect_wallet_btn {
     width: 223px;
     height: 69px;
+    @media (max-width: 1440px) {
+      width: 200px;
+      height: 55px;
+    }
+    @media (max-width: 750px) {
+      width: 82px;
+      height: 21px;
+    }
   }
   .my_nft {
     width: 135px;

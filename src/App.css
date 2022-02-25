@@ -49,7 +49,13 @@ body .container_section {
   font-size: 57px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1440px) {
+  .font_size_57.lg_responsive {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 750px) {
   .font_size_57.sm_responsive {
     font-size: 18px;
   }
@@ -59,11 +65,23 @@ body .container_section {
   font-size: 30px;
 }
 
+@media (max-width: 750px) {
+  .font_size_30.sm_responsive {
+    font-size: 12px;
+  }
+}
+
 .font_size_45 {
   font-size: 45px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1440px) {
+  .font_size_45.lg_responsive {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 750px) {
   .font_size_45.sm_responsive {
     font-size: 18px;
   }
@@ -73,7 +91,13 @@ body .container_section {
   font-size: 54px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1440px) {
+  .font_size_54.sm_responsive {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1440px) {
   .font_size_54.sm_responsive {
     font-size: 18px;
   }
@@ -83,7 +107,13 @@ body .container_section {
   font-size: 60px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 1440px) {
+  .font_size_60.lg_responsive {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 750px) {
   .font_size_60.sm_responsive {
     font-size: 36px;
   }
@@ -95,6 +125,18 @@ body .container_section {
 
 .font_size_56 {
   font-size: 56px;
+}
+
+@media (max-width: 1440px) {
+  .font_size_56.lg_responsive {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 750px) {
+  .font_size_56.sm_responsive {
+    font-size: 36px;
+  }
 }
 
 .font_size_55 {
@@ -182,5 +224,12 @@ button {
 section {
   margin-left: 77px;
   margin-right: 77px;
+}
+
+@media (max-width: 750px) {
+  section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

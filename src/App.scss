@@ -44,19 +44,35 @@ body {
 }
 .font_size_57 {
   font-size: 57px;
+
+  &.lg_responsive {
+    @media (max-width: 1440px) {
+      font-size: 35px;
+    }
+  }
   &.sm_responsive {
-    @media (max-width: 360px) {
+    @media (max-width: 750px) {
       font-size: 18px;
     }
   }
 }
 .font_size_30 {
   font-size: 30px;
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 12px;
+    }
+  }
 }
 .font_size_45 {
   font-size: 45px;
+  &.lg_responsive {
+    @media (max-width: 1440px) {
+      font-size: 30px;
+    }
+  }
   &.sm_responsive {
-    @media (max-width: 360px) {
+    @media (max-width: 750px) {
       font-size: 18px;
     }
   }
@@ -64,15 +80,26 @@ body {
 .font_size_54 {
   font-size: 54px;
   &.sm_responsive {
-    @media (max-width: 360px) {
+    @media (max-width: 1440px) {
+      font-size: 30px;
+    }
+  }
+  &.sm_responsive {
+    @media (max-width: 1440px) {
       font-size: 18px;
     }
   }
 }
 .font_size_60 {
   font-size: 60px;
+  &.lg_responsive {
+    @media (max-width: 1440px) {
+      font-size: 46px;
+    }
+  }
+
   &.sm_responsive {
-    @media (max-width: 360px) {
+    @media (max-width: 750px) {
       font-size: 36px;
     }
   }
@@ -82,6 +109,17 @@ body {
 }
 .font_size_56 {
   font-size: 56px;
+  &.lg_responsive {
+    @media (max-width: 1440px) {
+      font-size: 44px;
+    }
+  }
+
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 36px;
+    }
+  }
 }
 .font_size_55 {
   font-size: 55px;
@@ -158,5 +196,9 @@ button {
 section {
   margin-left: 77px;
   margin-right: 77px;
+  @media (max-width: 750px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 // .............Section styles................End

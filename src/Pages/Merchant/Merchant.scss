@@ -8,6 +8,10 @@
   .card_wrapper {
     .img_icon {
       max-height: 300px;
+      @media (max-width: 750px) {
+        height: 125px;
+        width: 86px;
+      }
     }
     border-radius: 10px;
     background: #ffcaca;
@@ -26,6 +30,9 @@
         border-radius: 10px;
         padding: 10px 25px;
         color: #fff;
+        @media (max-width: 750px) {
+          padding: 5px 8px;
+        }
       }
     }
   }

@@ -63,7 +63,7 @@ function MerchantFrame() {
   return (
     <section id="MerchantFrame">
       <div className="MerchantFrameWrapper">
-        <div className="row gy-4">
+        <div className="row g-2 gx-md-4 gy-md-4">
           {merchant_card_object.map((v) => {
             return (
               <div key={v.id} className="col-6 col-lg-4">
@@ -74,14 +74,14 @@ function MerchantFrame() {
                     </div>
                     <div className="card_body">
                       <div className="card_body_content">
-                        <h5 className="text-white font_size_24 mb-0">
+                        <h5 className="text-white font_size_24 sm_responsive mb-0">
                           NAME OF CHARACTER
                         </h5>
-                        <h6 className="text-white font_size_16">
+                        <h6 className="text-white font_size_16 sm_responsive">
                           {v.subtitle}
                         </h6>
                         <div className="card_footer_content d-flex align-items-center justify-content-between">
-                          <span className="font_size_24">
+                          <span className="font_size_24 sm_responsive">
                             {" "}
                             <img
                               className="align-middle"
@@ -90,7 +90,7 @@ function MerchantFrame() {
                             />{" "}
                             {v.coin_price}
                           </span>
-                          <button className="font_size_24 text-white">
+                          <button className="font_size_24 sm_responsive text-white">
                             BUY NOW
                           </button>
                         </div>

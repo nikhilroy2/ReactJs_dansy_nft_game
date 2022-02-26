@@ -18,6 +18,13 @@
   max-height: 300px;
 }
 
+@media (max-width: 750px) {
+  #Merchant .card_wrapper .img_icon {
+    height: 125px;
+    width: 86px;
+  }
+}
+
 #Merchant .card_wrapper .card_header {
   padding: 30px;
   padding-bottom: 0px;
@@ -34,5 +41,11 @@
   border-radius: 10px;
   padding: 10px 25px;
   color: #fff;
+}
+
+@media (max-width: 750px) {
+  #Merchant .card_wrapper .card_body_content .card_footer_content {
+    padding: 5px 8px;
+  }
 }
 /*# sourceMappingURL=Merchant.css.map */

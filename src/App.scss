@@ -153,6 +153,11 @@ body {
       font-size: 19px;
     }
   }
+  &.static_responsive {
+    @media (max-width: 750px) {
+      font-size: 18px;
+    }
+  }
 }
 .font_size_33 {
   font-size: 33px;
@@ -240,6 +245,11 @@ body {
       font-size: 10px;
     }
   }
+  &.card_responsive {
+    @media (max-width: 750px) {
+      font-size: 14px;
+    }
+  }
 }
 .font_size_18 {
   font-size: 18px;
@@ -262,9 +272,22 @@ body {
 }
 .font_size_61 {
   font-size: 61px;
+  @media (max-width: 750px) {
+    font-size: 30px;
+  }
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 24px;
+    }
+  }
 }
 .font_size_65 {
   font-size: 65px;
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 18px;
+    }
+  }
 }
 .font_size_27 {
   font-size: 27px;

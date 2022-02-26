@@ -1,69 +1,80 @@
 #MyNft {
-    //   height: 100vh;
-    position: relative;
-    padding-bottom: 32px;
-    background: rgba(0, 0, 0, 0.6);
-    &::after {
-      background: url("../../Static/img/marketplace_bg.png") center/cover
-        no-repeat;
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      top: 0px;
-      left: 0px;
-      z-index: -1;
+  //   height: 100vh;
+  position: relative;
+  padding-bottom: 32px;
+  background: rgba(0, 0, 0, 0.6);
+  &::after {
+    background: url("../../Static/img/marketplace_bg.png") center/cover
+      no-repeat;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+  * {
+    text-transform: uppercase;
+  }
+  .card_control_list {
+    li {
+      padding: 5px;
+      border-radius: 10px;
+      border: 1px solid #fff;
+      flex-grow: 1;
+      color: #fff;
+      &:not(:last-child) {
+        margin-right: 19px;
+      }
+    }
+  }
+  .col_wrapper {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    color: #000;
+    @media (max-width: 750px) {
+      padding: 15px;
+      .gold_coin{
+        width: 7px;
+        height: 7px;
+        margin-right: 1px;
+      }
+
+    }
+    .img_icon {
+      max-height: 234px;
+      @media (max-width: 750px) {
+        max-height: 105px;
+      }
     }
     * {
       text-transform: uppercase;
     }
-    .card_control_list {
-      li {
-        padding: 5px;
-        border-radius: 10px;
-        border: 1px solid #fff;
-        flex-grow: 1;
-        color: #fff;
-        &:not(:last-child) {
-          margin-right: 19px;
-        }
-      }
-    }
-    .col_wrapper {
-      background: #fff;
-      padding: 25px;
-      border-radius: 10px;
-      color: #000;
-      .img_icon {
-        max-height: 234px;
-      }
-      * {
-        text-transform: uppercase;
-      }
-      i {
-        font-style: normal;
-        color: rgba(18, 18, 18, 0.71);
-      }
-    }
-    .first_col{
-        padding-right: 76px;
-    }
-    .form_group {
-      select {
-        width: 100%;
-        height: 40px;
-        background: transparent;
-        border: 1px solid #fff;
-        border-radius: 10px;
-        color: #fff;
-        text-align: center;
-        outline: none;
-        box-shadow: none;
-      }
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
+    i {
+      font-style: normal;
+      color: rgba(18, 18, 18, 0.71);
     }
   }
-  
+  .first_col {
+    padding-right: 76px;
+  }
+  .form_group {
+    select {
+      width: 100%;
+      height: 40px;
+      background: transparent;
+      border: 1px solid #fff;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      outline: none;
+      box-shadow: none;
+    }
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}

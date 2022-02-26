@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 function MyNft(props) {
   return (
     <div id="MyNft">
-      <Navigation2 navigateName="my nft"></Navigation2>
-      <MyNftFrame></MyNftFrame>
+      <div className="container_section">
+        <Navigation2 navigateName="my nft"></Navigation2>
+        <MyNftFrame></MyNftFrame>
+      </div>
     </div>
   );
 }
@@ -76,7 +78,7 @@ function MyNftFrame() {
     <section id="MyNftFrame">
       <div className="MyNftFrameWrapper">
         <h2 className="font_size_61 text-white">Collections</h2>
-        <div className="row gy-4">
+        <div className="row g-2 g-md-4">
           {marketplace_card_object.map((v) => {
             return (
               <div key={v.id} className="col-6 col-lg-4 col-xl-3">
@@ -93,20 +95,20 @@ function MyNftFrame() {
                         <img className="img_icon " src={v.img} alt="img" />
                       </div>
                       <div className="card_body mt-3">
-                        <h5 className="font_size_20">Samurai #1125</h5>
+                        <h5 className="font_size_20 card_responsize">Samurai #1125</h5>
                         <div className="d-flex flex-wrap justify-content-between align-items-center">
-                          <span className="font_size_16">
+                          <span className="font_size_16 sm_responsive">
                             <img
-                              className="align-middle"
+                              className="align-middle gold_coin"
                               src={require("../../Static/img/gold_coin.png")}
                               alt="img"
                             />
                             <b>{v.coin_price1}</b> <i>(Highest offer)</i>
                           </span>
 
-                          <span className="font_size_22">
+                          <span className="font_size_22 card_responsive">
                             <img
-                              className="align-middle"
+                              className="align-middle gold_coin"
                               src={require("../../Static/img/gold_coin.png")}
                               alt="img"
                             />

@@ -41,8 +41,25 @@
   color: #000;
 }
 
+@media (max-width: 750px) {
+  #MyNft .col_wrapper {
+    padding: 15px;
+  }
+  #MyNft .col_wrapper .gold_coin {
+    width: 7px;
+    height: 7px;
+    margin-right: 1px;
+  }
+}
+
 #MyNft .col_wrapper .img_icon {
   max-height: 234px;
+}
+
+@media (max-width: 750px) {
+  #MyNft .col_wrapper .img_icon {
+    max-height: 105px;
+  }
 }
 
 #MyNft .col_wrapper * {

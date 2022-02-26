@@ -179,6 +179,12 @@ body .container_section {
   }
 }
 
+@media (max-width: 750px) {
+  .font_size_55.static_responsive {
+    font-size: 18px;
+  }
+}
+
 .font_size_33 {
   font-size: 33px;
 }
@@ -285,6 +291,12 @@ body .container_section {
   }
 }
 
+@media (max-width: 750px) {
+  .font_size_22.card_responsive {
+    font-size: 14px;
+  }
+}
+
 .font_size_18 {
   font-size: 18px;
 }
@@ -315,8 +327,26 @@ body .container_section {
   font-size: 61px;
 }
 
+@media (max-width: 750px) {
+  .font_size_61 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .font_size_61.sm_responsive {
+    font-size: 24px;
+  }
+}
+
 .font_size_65 {
   font-size: 65px;
+}
+
+@media (max-width: 750px) {
+  .font_size_65.sm_responsive {
+    font-size: 18px;
+  }
 }
 
 .font_size_27 {

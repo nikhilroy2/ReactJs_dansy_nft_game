@@ -66,7 +66,7 @@ export function Navigation2(props) {
     <div id="Navigation2">
       <section>
         <div className="d-flex align-items-center justify-content-between">
-          <div className={`${IsAuthenticate? 'col-2 col-sm-3 ': 'col-4 '}`}>
+          <div className={`${IsAuthenticate? 'col-1 col-sm-3 ': 'col-4 '}`}>
             <button onClick={() => window.history.back()} className="arrow_btn">
               <img src={require("../../Static/img/arow.png")} alt="img" />
             </button>
@@ -80,7 +80,7 @@ export function Navigation2(props) {
             </button>
           </div>
 
-          <div className={`${IsAuthenticate? 'col-8 col-sm-6 text-end text-sm-center': 'col-4 text-center'}`}>
+          <div className={`${IsAuthenticate? 'col-7 col-sm-6 text-end text-sm-center': 'col-4 text-center'}`}>
             {pathname.toLowerCase() === "/marketplace" && (
               <Link
                 to="/my_nft"

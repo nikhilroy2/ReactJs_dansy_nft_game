@@ -135,6 +135,12 @@ body .container_section {
   font-size: 40px;
 }
 
+@media (max-width: 750px) {
+  .font_size_40.sm_responsive {
+    font-size: 20px;
+  }
+}
+
 .font_size_56 {
   font-size: 56px;
 }
@@ -173,6 +179,12 @@ body .container_section {
 
 .font_size_20 {
   font-size: 20px;
+}
+
+@media (max-width: 750px) {
+  .font_size_20.sm_responsive {
+    font-size: 6px;
+  }
 }
 
 .font_size_24 {

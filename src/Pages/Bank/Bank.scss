@@ -21,6 +21,22 @@
           .img_icon{
               height: 69px;
           }
+          .harvest_frame{
+              background: url('../../Static/img/harvest_frame.png') center /100% 100% no-repeat;
+          }
+          .minecraft_control{
+              .wallet_btn{
+                  flex-grow: 1;
+                  width: auto!important;
+                  line-height: 80%;
+              }
+              .plus_btn{
+                  width: 64px;
+                  height: 35.23px;
+                  color: white;
+                  line-height: 0px;
+              }
+          }
       }
   }
 }

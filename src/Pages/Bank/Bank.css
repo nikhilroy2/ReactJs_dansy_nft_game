@@ -31,4 +31,23 @@
 #Bank .card_wrapper .card_body .img_icon {
   height: 69px;
 }
+
+#Bank .card_wrapper .card_body .harvest_frame {
+  background: url("../../Static/img/harvest_frame.png") center/100% 100% no-repeat;
+}
+
+#Bank .card_wrapper .card_body .minecraft_control .wallet_btn {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: auto !important;
+  line-height: 80%;
+}
+
+#Bank .card_wrapper .card_body .minecraft_control .plus_btn {
+  width: 64px;
+  height: 35.23px;
+  color: white;
+  line-height: 0px;
+}
 /*# sourceMappingURL=Bank.css.map */

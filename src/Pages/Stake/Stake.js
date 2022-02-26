@@ -87,7 +87,7 @@ function Stake(props) {
                           <h3 className="font_size_55 lg_responsive sm_responsive text-white">
                             Ronin
                             <svg
-                              className="mx-4"
+                              className="mx-2 mx-md-4"
                               width={23}
                               height={12}
                               viewBox="0 0 23 12"
@@ -125,7 +125,7 @@ function Stake(props) {
                           <h3 className="font_size_55 lg_responsive sm_responsive lg_responsive sm_responsive text-white">
                             Samurai
                             <svg
-                              className="mx-4"
+                              className="mx-2 mx-md-4"
                               width={23}
                               height={12}
                               viewBox="0 0 23 12"
@@ -169,7 +169,7 @@ function Stake(props) {
                         <h3 className="font_size_55 lg_responsive sm_responsive text-white">
                           Ronin
                           <svg
-                            className="mx-4"
+                            className="mx-2 mx-md-4"
                             width={23}
                             height={12}
                             viewBox="0 0 23 12"

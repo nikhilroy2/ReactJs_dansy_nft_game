@@ -116,6 +116,11 @@ body {
 }
 .font_size_40 {
   font-size: 40px;
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 20px;
+    }
+  }
 }
 .font_size_56 {
   font-size: 56px;
@@ -149,6 +154,11 @@ body {
 }
 .font_size_20 {
   font-size: 20px;
+  &.sm_responsive{
+    @media (max-width: 750px) {
+      font-size: 6px;
+    }
+  }
 }
 .font_size_24 {
   font-size: 24px;

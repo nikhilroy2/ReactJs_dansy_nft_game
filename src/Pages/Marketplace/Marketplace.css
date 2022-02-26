@@ -92,6 +92,11 @@
           transform: translateY(-50%);
 }
 
+#Marketplace .select_event {
+  pointer-events: visible;
+  cursor: pointer;
+}
+
 #Marketplace .form_price_select_group .form_select_dropdown {
   background: #fff;
   border-radius: 10px;
@@ -101,5 +106,18 @@
   width: 100%;
   right: 0px;
   z-index: 2;
+  margin-top: 8px;
+}
+
+#Marketplace .form_filter_select_group .form_select_dropdown {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  position: absolute;
+  pointer-events: visible;
+  width: 100%;
+  right: 0px;
+  z-index: 2;
+  margin-top: 8px;
 }
 /*# sourceMappingURL=Marketplace.css.map */

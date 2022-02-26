@@ -45,8 +45,8 @@
       color: rgba(18, 18, 18, 0.71);
     }
   }
-  .first_col{
-      padding-right: 76px;
+  .first_col {
+    padding-right: 76px;
   }
   .form_group {
     select {
@@ -59,9 +59,32 @@
       text-align: center;
       outline: none;
       box-shadow: none;
+      appearance: none;
+      padding-left: 45px;
+      padding-right: 45px;
+      pointer-events: none;
+      user-select: none;
     }
     &:not(:last-child) {
       margin-right: 20px;
+    }
+  }
+  svg {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .form_price_select_group {
+    .form_select_dropdown {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.35);
+      position: absolute;
+      pointer-events: visible;
+      width: 100%;
+      right: 0px;
+      z-index: 2;
     }
   }
 }

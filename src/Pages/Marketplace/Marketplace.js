@@ -107,21 +107,157 @@ function MarketPlaceFrame() {
             </ul>
           </div>
           <div className="col-6 mt-0">
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center position-relative">
               <div className="form_group flex-grow-1">
-                <select name="" className="font_size_20" id="">
-                  <option value="Price (Lowest to highest)">
-                    Price (Lowest to highest)
-                  </option>
-                </select>
+                <div className="form_group_input_wrapper  position-relative">
+                  <select name="" className="font_size_20" id="">
+                    <option value="Price (Lowest to highest)">
+                      Price (Lowest to highest)
+                    </option>
+                  </select>
+                  <svg
+                    width={18}
+                    height={10}
+                    viewBox="0 0 18 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5 1.5L9 8.5L16.5 1.5"
+                      stroke="white"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
               </div>
 
-              <div className="form_group">
-                <select name="" className="font_size_20" id="">
-                  <option value="Price (Lowest to highest)">
-                    Price (Lowest to highest)
-                  </option>
-                </select>
+              <div className="form_group form_price_select_group">
+                <div className="form_group_input_wrapper">
+                  <select name="" className="font_size_20" id="">
+                    <option value="Filter">Filter</option>
+                  </select>
+                  <svg
+                    width={18}
+                    height={10}
+                    viewBox="0 0 18 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5 1.5L9 8.5L16.5 1.5"
+                      stroke="white"
+                      strokeWidth={2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <div className="form_select_dropdown">
+                  <div className="row">
+                    <div className="col-4">
+                      <div className="col_wrapper">
+                        <h4 className="font_size_20 text_red">Alpha Score</h4>
+                        <ul className="list-unstyled">
+                          <li className="d-flex align-items-center">
+                            <input type="checkbox" name="" id="srore1" />{" "}
+                            <label
+                              htmlFor="srore1"
+                              className="font_size_12 ms-2"
+                            >
+                              5 (2966)
+                            </label>
+                          </li>
+
+                          <li className="d-flex align-items-center">
+                            <input type="checkbox" name="" id="srore2" />{" "}
+                            <label
+                              htmlFor="srore2"
+                              className="font_size_12 ms-2"
+                            >
+                              6 (1730)
+                            </label>
+                          </li>
+
+                          <li className="d-flex align-items-center">
+                            <input type="checkbox" name="" id="srore3" />{" "}
+                            <label
+                              htmlFor="srore3"
+                              className="font_size_12 ms-2"
+                            >
+                              7 (2548)
+                            </label>
+                          </li>
+
+                          <li className="d-flex align-items-center">
+                            <input type="checkbox" name="" id="srore4" />{" "}
+                            <label
+                              htmlFor="srore4"
+                              className="font_size_12 ms-2"
+                            >
+                              8 (36478)
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-4">
+                      <div className="col_wrapper">
+                        <h4 className="font_size_20 text_red">Generation</h4>
+                        <ul className="list-unstyled">
+                          <li className="d-flex align-items-center">
+                            <input type="checkbox" name="" id="num0" />{" "}
+                            <label htmlFor="num0" className="font_size_12 ms-2">
+                              0
+                            </label>
+                          </li>
+
+                          <li className="d-flex align-items-center">
+                            <input type="checkbox" name="" id="num1" />{" "}
+                            <label htmlFor="num1" className="font_size_12 ms-2">
+                              1
+                            </label>
+                          </li>
+
+                          <li className="d-flex align-items-center">
+                            <input type="checkbox" name="" id="num2" />{" "}
+                            <label htmlFor="num2" className="font_size_12 ms-2">
+                              2
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-4">
+                      <div className="col_wrapper">
+                        <h4 className="font_size_20 text_red">Type</h4>
+                        <ul className="list-unstyled">
+                          <li className="d-flex align-items-center">
+                            <input type="checkbox" name="" id="Samurai" />{" "}
+                            <label
+                              htmlFor="Samurai"
+                              className="font_size_12 ms-2"
+                            >
+                              Samurai
+                            </label>
+                          </li>
+
+                          <li className="d-flex align-items-center">
+                            <input type="checkbox" name="" id="Ronin" />{" "}
+                            <label
+                              htmlFor="Ronin"
+                              className="font_size_12 ms-2"
+                            >
+                              Ronin
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

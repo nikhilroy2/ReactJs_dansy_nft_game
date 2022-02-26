@@ -84,7 +84,7 @@ export function Navigation2(props) {
             {pathname.toLowerCase() === "/marketplace" && (
               <Link
                 to="/my_nft"
-                className="bg_dansy my_nft text-white font_size_30 text-uppercase"
+                className="bg_dansy my_nft text-white font_size_30  sm_responsive text-uppercase"
               >
                 my nfts
               </Link>

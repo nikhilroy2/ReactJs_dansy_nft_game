@@ -68,9 +68,38 @@
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-left: 45px;
+  padding-right: 45px;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #Marketplace .form_group:not(:last-child) {
   margin-right: 20px;
+}
+
+#Marketplace svg {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#Marketplace .form_price_select_group .form_select_dropdown {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  position: absolute;
+  pointer-events: visible;
+  width: 100%;
+  right: 0px;
+  z-index: 2;
 }
 /*# sourceMappingURL=Marketplace.css.map */

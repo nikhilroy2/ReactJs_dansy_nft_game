@@ -1,2 +1,2 @@
 // auth condition here
-export const IsAuthenticate = false;
+export const IsAuthenticate = true;

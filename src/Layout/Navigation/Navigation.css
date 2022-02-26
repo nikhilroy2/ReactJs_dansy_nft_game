@@ -140,4 +140,11 @@
           align-items: center;
   margin-right: 20px;
 }
+
+@media (max-width: 1440px) {
+  #Navigation2 .my_nft {
+    width: 80px;
+    height: 40px;
+  }
+}
 /*# sourceMappingURL=Navigation.css.map */

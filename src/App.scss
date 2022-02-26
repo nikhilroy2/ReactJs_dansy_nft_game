@@ -154,17 +154,37 @@ body {
 }
 .font_size_20 {
   font-size: 20px;
-  &.sm_responsive{
+  &.sm_responsive {
     @media (max-width: 750px) {
       font-size: 6px;
+    }
+  }
+  &.lg_responsive {
+    @media (max-width: 750px) {
+      font-size: 16px;
+    }
+  }
+  &.card_responsize {
+    @media (max-width: 750px) {
+      font-size: 12px;
     }
   }
 }
 .font_size_24 {
   font-size: 24px;
-  &.sm_responsive{
-    @media (max-width: 750px){
+  &.lg_responsive {
+    @media (max-width: 1440px) {
+      font-size: 18px;
+    }
+  }
+  &.sm_responsive {
+    @media (max-width: 750px) {
       font-size: 10px;
+    }
+  }
+  &.filter_responsive {
+    @media (max-width: 750px) {
+      font-size: 20px;
     }
   }
 }
@@ -173,8 +193,8 @@ body {
 }
 .font_size_16 {
   font-size: 16px;
-  &.sm_responsive{
-    @media (max-width: 750px){
+  &.sm_responsive {
+    @media (max-width: 750px) {
       font-size: 11px;
     }
   }
@@ -198,6 +218,11 @@ body {
 }
 .font_size_18 {
   font-size: 18px;
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 12px;
+    }
+  }
 }
 .font_size_49 {
   font-size: 49px;

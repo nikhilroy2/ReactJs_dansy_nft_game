@@ -27,15 +27,30 @@
       color: #fff;
       &:not(:last-child) {
         margin-right: 19px;
+        @media (max-width: 750px) {
+          margin-right: 6px;
+        }
       }
+    }
+  }
+  .gold_icon {
+    @media (max-width: 750px) {
+      width: 10px;
+      width: 10px;
     }
   }
   .col_wrapper {
     background: #fff;
     padding: 25px;
     border-radius: 10px;
+    @media (max-width: 750px) {
+      padding: 10px;
+    }
     .img_icon {
       max-height: 234px;
+      @media (max-width: 750px) {
+        max-height: 105px;
+      }
     }
     * {
       text-transform: uppercase;
@@ -47,6 +62,9 @@
   }
   .first_col {
     padding-right: 76px;
+    @media (max-width: 991px) {
+      padding-right: 0px;
+    }
   }
   .form_group {
     select {
@@ -64,9 +82,16 @@
       padding-right: 45px;
       pointer-events: none;
       user-select: none;
+      @media (max-width: 750px) {
+        padding-left: 5px;
+        padding-right: 34px;
+      }
     }
     &:not(:last-child) {
       margin-right: 20px;
+      @media (max-width: 750px) {
+        margin-right: 6px;
+      }
     }
   }
   svg {
@@ -93,6 +118,9 @@
     }
   }
   .form_filter_select_group {
+    @media (max-width: 750px) {
+      min-width: 100px;
+    }
     .form_select_dropdown {
       background: #fff;
       border-radius: 10px;

@@ -81,9 +81,17 @@ function MarketPlaceFrame() {
     <section id="MarketPlaceFrame">
       <div className="MarketPlaceFrameWrapper">
         <div className="row align-items-center gy-3 my-3">
-          <div className="col-6 first_col">
+          <div className="col-lg-6 first_col">
             <ul className="list-unstyled card_control_list d-flex flex-wrap">
-              <li className="font_size_20 text-center">
+              <li className="font_size_20 mb-2 text-center">
+                <h5 className="mb-0 font_size_20 lg_responsive">Floor price</h5>
+                55{" "}
+                <img
+                  src={require("../../Static/img/gold_coin.png")}
+                  alt="img"
+                />
+              </li>
+              <li className="font_size_20 mb-2 text-center lg_responsive">
                 <h5 className="mb-0 font_size_20">Floor price</h5>
                 55{" "}
                 <img
@@ -91,15 +99,7 @@ function MarketPlaceFrame() {
                   alt="img"
                 />
               </li>
-              <li className="font_size_20 text-center">
-                <h5 className="mb-0 font_size_20">Floor price</h5>
-                55{" "}
-                <img
-                  src={require("../../Static/img/gold_coin.png")}
-                  alt="img"
-                />
-              </li>
-              <li className="font_size_20 text-center">
+              <li className="font_size_20 mb-2 text-center lg_responsive">
                 <h5 className="mb-0 font_size_20">Floor price</h5>
                 55{" "}
                 <img
@@ -109,14 +109,14 @@ function MarketPlaceFrame() {
               </li>
             </ul>
           </div>
-          <div className="col-6 mt-0">
+          <div className="col-lg-6 mt-0">
             <div className="d-flex align-items-center position-relative">
               <div
                 onClick={() => setPriceDropdown(!priceDropdown)}
                 className="form_group flex-grow-1 form_price_select_group select_event position-relative"
               >
                 <div className="form_group_input_wrapper  position-relative">
-                  <select name="" className="font_size_24" id="">
+                  <select name="" className="font_size_24 lg_responsive" id="">
                     <option value="Price (Lowest to highest)">
                       Price (Lowest to highest)
                     </option>
@@ -143,16 +143,16 @@ function MarketPlaceFrame() {
                       <div className="col-12">
                         <div className="col_wrpaper_dropdown px-4 py-2">
                           <ul className="list-unstyled p-1 m-0">
-                            <li className="font_size_24">Recently Listed</li>
-                            <li className="font_size_24">Recently Minted</li>
-                            <li className="font_size_24">Recently Sold</li>
-                            <li className="font_size_24">
+                            <li className="font_size_24 lg_responsive">Recently Listed</li>
+                            <li className="font_size_24 lg_responsive">Recently Minted</li>
+                            <li className="font_size_24 lg_responsive">Recently Sold</li>
+                            <li className="font_size_24 lg_responsive">
                               Price (Lowest to highest)
                             </li>
-                            <li className="font_size_24">
+                            <li className="font_size_24 lg_responsive">
                               Price (Highest to lowest)
                             </li>
-                            <li className="font_size_24">Highest Last Sale</li>
+                            <li className="font_size_24 lg_responsive">Highest Last Sale</li>
                           </ul>
                         </div>
                       </div>
@@ -166,7 +166,7 @@ function MarketPlaceFrame() {
                   className="form_group_input_wrapper select_event"
                   onClick={() => setFilter(!filter)}
                 >
-                  <select name="" className="font_size_24" id="">
+                  <select name="" className="font_size_24 lg_responsive" id="">
                     <option value="Filter">Filter</option>
                   </select>
                   <svg
@@ -188,10 +188,10 @@ function MarketPlaceFrame() {
 
                 {filter && (
                   <div className="form_select_dropdown">
-                    <div className="row">
+                    <div className="row g-0 g-md-2">
                       <div className="col-4">
                         <div className="col_wrapper">
-                          <h4 className="font_size_24 text_red">Alpha Score</h4>
+                          <h4 className="font_size_24 text_red filter_responsive">Alpha Score</h4>
                           <ul className="list-unstyled">
                             <li className="d-flex align-items-center">
                               <input type="checkbox" name="" id="srore1" />{" "}
@@ -237,7 +237,7 @@ function MarketPlaceFrame() {
                       </div>
                       <div className="col-4">
                         <div className="col_wrapper">
-                          <h4 className="font_size_24 text_red">Generation</h4>
+                          <h4 className="font_size_24 text_red filter_responsive">Generation</h4>
                           <ul className="list-unstyled">
                             <li className="d-flex align-items-center">
                               <input type="checkbox" name="" id="num0" />{" "}
@@ -273,7 +273,7 @@ function MarketPlaceFrame() {
                       </div>
                       <div className="col-4">
                         <div className="col_wrapper">
-                          <h4 className="font_size_24 text_red">Type</h4>
+                          <h4 className="font_size_24 text_red filter_responsive">Type</h4>
                           <ul className="list-unstyled">
                             <li className="d-flex align-items-center">
                               <input type="checkbox" name="" id="Samurai" />{" "}
@@ -304,7 +304,7 @@ function MarketPlaceFrame() {
             </div>
           </div>
         </div>
-        <div className="row gy-4">
+        <div className="row g-2 g-md-4">
           {marketplace_card_object.map((v) => {
             return (
               <div key={v.id} className="col-6 col-lg-4 col-xl-3">
@@ -321,20 +321,20 @@ function MarketPlaceFrame() {
                         <img className="img_icon " src={v.img} alt="img" />
                       </div>
                       <div className="card_body mt-3">
-                        <h5 className="font_size_20">Samurai #1125</h5>
+                        <h5 className="font_size_20 text-black card_responsize">Samurai #1125</h5>
                         <div className="d-flex flex-wrap justify-content-between align-items-center">
-                          <span className="font_size_16">
+                          <span className="font_size_16 sm_responsive text-black">
                             <img
-                              className="align-middle"
+                              className="align-middle gold_icon"
                               src={require("../../Static/img/gold_coin.png")}
                               alt="img"
                             />
                             <b>{v.coin_price1}</b> <i>(Highest offer)</i>
                           </span>
 
-                          <span className="font_size_22">
+                          <span className="font_size_22 lg_responsive text-black">
                             <img
-                              className="align-middle"
+                              className="align-middle gold_icon"
                               src={require("../../Static/img/gold_coin.png")}
                               alt="img"
                             />

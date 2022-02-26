@@ -34,14 +34,39 @@
   margin-right: 19px;
 }
 
+@media (max-width: 750px) {
+  #Marketplace .card_control_list li:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+@media (max-width: 750px) {
+  #Marketplace .gold_icon {
+    width: 10px;
+    width: 10px;
+  }
+}
+
 #Marketplace .col_wrapper {
   background: #fff;
   padding: 25px;
   border-radius: 10px;
 }
 
+@media (max-width: 750px) {
+  #Marketplace .col_wrapper {
+    padding: 10px;
+  }
+}
+
 #Marketplace .col_wrapper .img_icon {
   max-height: 234px;
+}
+
+@media (max-width: 750px) {
+  #Marketplace .col_wrapper .img_icon {
+    max-height: 105px;
+  }
 }
 
 #Marketplace .col_wrapper * {
@@ -55,6 +80,12 @@
 
 #Marketplace .first_col {
   padding-right: 76px;
+}
+
+@media (max-width: 991px) {
+  #Marketplace .first_col {
+    padding-right: 0px;
+  }
 }
 
 #Marketplace .form_group select {
@@ -80,8 +111,21 @@
           user-select: none;
 }
 
+@media (max-width: 750px) {
+  #Marketplace .form_group select {
+    padding-left: 5px;
+    padding-right: 34px;
+  }
+}
+
 #Marketplace .form_group:not(:last-child) {
   margin-right: 20px;
+}
+
+@media (max-width: 750px) {
+  #Marketplace .form_group:not(:last-child) {
+    margin-right: 6px;
+  }
 }
 
 #Marketplace svg {
@@ -107,6 +151,12 @@
   right: 0px;
   z-index: 2;
   margin-top: 8px;
+}
+
+@media (max-width: 750px) {
+  #Marketplace .form_filter_select_group {
+    min-width: 100px;
+  }
 }
 
 #Marketplace .form_filter_select_group .form_select_dropdown {

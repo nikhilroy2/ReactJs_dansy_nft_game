@@ -66,12 +66,12 @@ export function Navigation2(props) {
     <div id="Navigation2">
       <section>
         <div className="d-flex align-items-center justify-content-between">
-          <div className={`${IsAuthenticate? 'col-2 col-sm-4 ': 'col-4 '}`}>
+          <div className={`${IsAuthenticate? 'col-2 col-sm-3 ': 'col-4 '}`}>
             <button onClick={() => window.history.back()} className="arrow_btn">
               <img src={require("../../Static/img/arow.png")} alt="img" />
             </button>
           </div>
-          <div className="col-4 text-center">
+          <div className="col-4 col-lg-4 text-center">
             <button
               className="recruit_btn lg_responsive sm_responsive text-white 
             bg_dansy font_size_57 text-uppercase"
@@ -80,11 +80,11 @@ export function Navigation2(props) {
             </button>
           </div>
 
-          <div className={`${IsAuthenticate? 'col-6 col-sm-4 text-end text-sm-center': 'col-4 text-center'}`}>
+          <div className={`${IsAuthenticate? 'col-8 col-sm-6 text-end text-sm-center': 'col-4 text-center'}`}>
             {pathname.toLowerCase() === "/marketplace" && (
               <Link
                 to="/my_nft"
-                className="bg_dansy my_nft text-white font_size_30  sm_responsive text-uppercase"
+                className="bg_dansy my_nft text-white font_size_30  lg_responsive sm_responsive text-uppercase"
               >
                 my nfts
               </Link>

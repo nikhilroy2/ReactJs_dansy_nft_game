@@ -33,6 +33,11 @@ body {
 }
 .font_size_34 {
   font-size: 34px;
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 14px;
+    }
+  }
 }
 .font_size_50 {
   font-size: 50px;
@@ -169,6 +174,16 @@ body {
       font-size: 12px;
     }
   }
+  &.type_responsive {
+    @media (max-width: 750px) {
+      font-size: 10px;
+    }
+  }
+  &.table_responsive {
+    @media (max-width: 750px) {
+      font-size: 13px;
+    }
+  }
 }
 .font_size_24 {
   font-size: 24px;
@@ -187,9 +202,19 @@ body {
       font-size: 20px;
     }
   }
+  &.table_responsive {
+    @media (max-width: 750px) {
+      font-size: 14px;
+    }
+  }
 }
 .font_size_26 {
   font-size: 26px;
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 14px;
+    }
+  }
 }
 .font_size_16 {
   font-size: 16px;
@@ -226,6 +251,14 @@ body {
 }
 .font_size_49 {
   font-size: 49px;
+  @media (max-width: 750px) {
+    font-size: 30px;
+  }
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 18px;
+    }
+  }
 }
 .font_size_61 {
   font-size: 61px;

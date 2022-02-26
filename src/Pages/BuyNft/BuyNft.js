@@ -2,7 +2,7 @@ import React from "react";
 import "./BuyNft.css";
 import { Link } from "react-router-dom";
 import { Navigation2 } from "../../Layout/Navigation/Navigation";
-
+import { IsAuthenticate } from "../../AuthManagement/Auth";
 function BuyNft(props) {
   return (
     <div id="BuyNft">
@@ -61,7 +61,7 @@ const SamuraiFunc = () => {
       <div className="content_box mb-4">
         <div className="d-flex justify-content-between align-items-center flex-wrap">
           <h2 className="font_size_49 content_title">{samuraiObject.name}</h2>
-          <button>
+          <button className="d-none d-md-block">
             <svg
               width={8}
               height={30}
@@ -75,12 +75,12 @@ const SamuraiFunc = () => {
             </svg>
           </button>
         </div>
-        <h4 className="font_size_26 content_subtitle">
+        <h4 className="font_size_26 sm_responsive content_subtitle">
           {samuraiObject.subName}
         </h4>
 
         <ul className="list-unstyled">
-          <li className="font_size_26">
+          <li className="font_size_26 sm_responsive">
             <img
               className="avatar_img"
               src={samuraiObject.userAvatar}
@@ -94,12 +94,15 @@ const SamuraiFunc = () => {
         <ul className="list-unstyled">
           {samuraiObject.offerList.map((v) => {
             return (
-              <li key={v.id} className="font_size_26 text_white_71 mb-0">
+              <li
+                key={v.id}
+                className="font_size_26 sm_responsive text_white_71 mb-0"
+              >
                 {v.name}
                 <span className="coin_count text_white_71 ms-4 d-inline-flax align-items-center">
                   {v.count}
                   <img
-                    className="ms-2"
+                    className="ms-2 gold_icon"
                     src={require("../../Static/img/gold_coin.png")}
                     alt="img"
                   />
@@ -110,12 +113,57 @@ const SamuraiFunc = () => {
         </ul>
 
         <div className="button_wrapper pt-3">
-          <button className="bg_dansy">
-            <Link to="/statistics_page" className=" font_size_34 px-4 me-3">
-              list for sale
-            </Link>
-          </button>
-          <button className="bg_dansy font_size_34 px-4">cancel listing</button>
+          {IsAuthenticate ? (
+            <button className="bg_dansy me-sm-1 me-md-3">
+              <Link
+                to="/statistics_page"
+                className="sm_responsive font_size_34 
+              px-2 px-md-4"
+              >
+                list for sale
+              </Link>
+            </button>
+          ) : (
+            <button
+              className="bg_dansy me-sm-1 me-md-3"
+              style={{
+                opacity: ".6",
+                pointerEvents: "none",
+                cursor: "none!important",
+              }}
+            >
+              <Link
+                to="/statistics_page"
+                disabled={true}
+                style={{
+                  opacity: ".6",
+                  pointerEvents: "none",
+                  cursor: "none!important",
+                }}
+                className="sm_responsive font_size_34 px-2 px-md-4 "
+              >
+                list for sale
+              </Link>
+            </button>
+          )}
+
+          {IsAuthenticate ? (
+            <button className="sm_responsive bg_dansy font_size_34 px-2 px-md-4">
+              cancel listing
+            </button>
+          ) : (
+            <button
+              style={{
+                opacity: ".6",
+                pointerEvents: "none",
+                cursor: "none!important",
+              }}
+              disabled={true}
+              className="sm_responsive bg_dansy font_size_34 px-2 px-md-4"
+            >
+              cancel listing
+            </button>
+          )}
         </div>
       </div>
     </div>
@@ -125,17 +173,17 @@ const SamuraiFunc = () => {
 const PropertiesFunc = () => {
   return (
     <div id="PropertiesFunc">
-      <h2 className="font_size_49">Properties</h2>
+      <h2 className="font_size_49 sm_responsive">Properties</h2>
       <div className="btn_wrapper">
-        <button className="font_size_20">
+        <button className="font_size_20 type_responsive">
           <span className="d-block text-center">TYPE</span>
           <span className="d-block text-center">SAMURAI</span>
         </button>
-        <button className="font_size_20">
+        <button className="font_size_20 type_responsive">
           <span className="d-block text-center">GENERATION</span>
           <span className="d-block text-center">1</span>
         </button>
-        <button className="font_size_20">
+        <button className="font_size_20 type_responsive">
           <span className="d-block text-center">ALPHA SCORE</span>
           <span className="d-block text-center">5</span>
         </button>
@@ -173,23 +221,23 @@ const OffersFunc = () => {
   ];
   return (
     <div id="OffersFunc" className="mt-4">
-      <h2 className="font_size_49">Offers</h2>
+      <h2 className="font_size_49 sm_responsive">Offers</h2>
       <div className="table-responsive offers_table">
         <table className="table">
           <thead className="border-0">
             <tr className="border-0">
-              <th className="font_size_24 border-0">FROM</th>
-              <th className="font_size_24 border-0">PRICE</th>
-              <th className="font_size_24 border-0">DATE</th>
-              <th className="font_size_24 border-0">STATUS</th>
-              <th className="font_size_24 border-0">ACTION</th>
+              <th className="font_size_24 table_responsive border-0">FROM</th>
+              <th className="font_size_24 table_responsive border-0">PRICE</th>
+              <th className="font_size_24 table_responsive border-0">DATE</th>
+              <th className="font_size_24 table_responsive border-0">STATUS</th>
+              <th className="font_size_24 table_responsive border-0">ACTION</th>
             </tr>
           </thead>
           <tbody>
             {offersList.map((v) => {
               return (
                 <tr key={v.id}>
-                  <td className="pb-0 pt-2 text_white_73 border-0 font_size_20">
+                  <td className="pb-0 pt-2 text_white_73 border-0 font_size_20 table_responsive text-nowrap">
                     {" "}
                     <img
                       src={require("../../Static/img/avatar.png")}
@@ -199,7 +247,7 @@ const OffersFunc = () => {
                     Owned by {v.from}
                   </td>
 
-                  <td className="pb-0 pt-2 text_white_73 border-0 font_size_20">
+                  <td className="pb-0 pt-2 text_white_73 border-0 font_size_20 table_responsive text-nowrap">
                     {v.price}
                     <img
                       style={{ height: "11px" }}
@@ -209,14 +257,14 @@ const OffersFunc = () => {
                     />
                   </td>
 
-                  <td className="pb-0 pt-2 text_white_73 border-0 font_size_20">
+                  <td className="pb-0 pt-2 text_white_73 border-0 font_size_20 table_responsive text-nowrap">
                     {v.date}
                   </td>
 
-                  <td className="pb-0 pt-2 text_white_73 border-0 font_size_20">
+                  <td className="pb-0 pt-2 text_white_73 border-0 font_size_20 table_responsive text-nowrap">
                     {v.status}
                   </td>
-                  <td className="pb-0 pt-2 text_white_73 border-0 font_size_20">
+                  <td className="pb-0 pt-2 text_white_73 border-0 font_size_20 table_responsive text-nowrap">
                     <button className="font_s_size_20 accept_btn text_white_73">
                       {v.action}
                     </button>

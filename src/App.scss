@@ -41,6 +41,11 @@ body {
       font-size: 28px;
     }
   }
+  &.sm_sm_responsive {
+    @media (max-width: 550px) {
+      font-size: 18px;
+    }
+  }
 }
 .font_size_57 {
   font-size: 57px;
@@ -58,6 +63,11 @@ body {
 }
 .font_size_30 {
   font-size: 30px;
+  &.lg_responsive {
+    @media (max-width: 1440px) {
+      font-size: 12px;
+    }
+  }
   &.sm_responsive {
     @media (max-width: 750px) {
       font-size: 12px;
@@ -123,6 +133,16 @@ body {
 }
 .font_size_55 {
   font-size: 55px;
+  &.lg_responsive {
+    @media (max-width: 1440px) {
+      font-size: 25px;
+    }
+  }
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 19px;
+    }
+  }
 }
 .font_size_33 {
   font-size: 33px;
@@ -144,6 +164,17 @@ body {
 }
 .font_size_22 {
   font-size: 22px;
+  &.lg_responsive {
+    @media (max-width: 1440px) {
+      font-size: 18px;
+    }
+  }
+
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 10px;
+    }
+  }
 }
 .font_size_18 {
   font-size: 18px;
@@ -156,6 +187,14 @@ body {
 }
 .font_size_65 {
   font-size: 65px;
+}
+.font_size_27 {
+  font-size: 27px;
+  &.sm_responsive {
+    @media (max-width: 750px) {
+      font-size: 14px;
+    }
+  }
 }
 // .................Heading Styles and fonts.......................End
 

@@ -9,6 +9,12 @@
   padding: 30px;
 }
 
+@media (max-width: 1440px) {
+  #Stake #StakeFrame {
+    padding: 15px 10px;
+  }
+}
+
 #Stake #StakeFrame * {
   text-transform: uppercase;
 }
@@ -17,9 +23,22 @@
   margin-right: 53px;
 }
 
+@media (max-width: 1440px) {
+  #Stake #StakeFrame .stake_tab_wrapper li.list_space {
+    margin-right: 7px;
+  }
+}
+
 #Stake #StakeFrame .stake_tab_wrapper svg {
   margin-left: 32px;
   margin-right: 32px;
+}
+
+@media (max-width: 1440px) {
+  #Stake #StakeFrame .stake_tab_wrapper svg {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
 
 #Stake #StakeFrame .stake_tab_wrapper .tab_btn {
@@ -47,5 +66,44 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 750px) {
+  #Stake #StakeFrame .tab_content_wrapper .btn_no_gold {
+    width: 113px;
+    height: 81px;
+  }
+}
+
+#Stake #StakeFrame .tab_content_wrapper .stake_swiper_item {
+  height: 163px;
+  display: block;
+  padding: 20px;
+  color: white;
+}
+
+@media (max-width: 1440px) {
+  #Stake #StakeFrame .tab_content_wrapper .stake_swiper_item {
+    width: 100%;
+    height: 140px;
+  }
+}
+
+@media (max-width: 750px) {
+  #Stake #StakeFrame .tab_content_wrapper .stake_swiper_item {
+    height: 81px;
+    padding: 10px;
+  }
+}
+
+#Stake #StakeFrame .tab_content_wrapper .btn_black_frame {
+  background: url("../../Static/img/btn_black_frame.png") center/100% 100% no-repeat;
+}
+
+@media (max-width: 750px) {
+  #Stake #StakeFrame .tab_content_wrapper .btn_black_frame {
+    width: 100% !important;
+    display: block;
+  }
 }
 /*# sourceMappingURL=Stake.css.map */
